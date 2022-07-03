@@ -151,6 +151,11 @@ textarea:focus-within,
     text-decoration: none;
   }
 
+p{
+    margin-top: 20px;
+    color: gray;
+    user-select: none;
+}
 
   /* generated QR code image  */
 .qr-section{
@@ -162,5 +167,12 @@ textarea:focus-within,
 }
 img[src="hidden"]{
     display: none;
+}
+
+@media (max-width: 419px){
+    .qr-size span{
+       margin-left: 0px;
+       margin-top: 5px;
+    }
 }
 
