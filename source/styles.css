@@ -124,7 +124,8 @@ textarea:focus-within,
     /* border: 1px solid; */
 }
 
-.generate-btn {
+.generate-btn,
+.download-btn {
     background: #3498db;
     background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
     background-image: -moz-linear-gradient(top, #3498db, #2980b9);
@@ -141,7 +142,8 @@ textarea:focus-within,
     text-decoration: none;
   }
   
-  .generate-btn:hover {
+.generate-btn:hover,
+.download-btn:hover {
     background: #3cb0fd;
     background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
     background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
@@ -150,6 +152,10 @@ textarea:focus-within,
     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
     text-decoration: none;
   }
+.download-btn{
+    border: none;
+    cursor: pointer;
+}
 
 p{
     margin-top: 20px;
@@ -159,13 +165,16 @@ p{
 
   /* generated QR code image  */
 .qr-section{
-    margin-top: 50px;
+    margin-top: 20px;
     height: 70vh;
     overflow: auto;
     display: grid;
     place-content: center;
 }
 img[src="hidden"]{
+    display: none;
+}
+button[data-hidden="true"]{
     display: none;
 }
 

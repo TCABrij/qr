@@ -22,4 +22,5 @@ function generateQR(){
 function appendQR(QRCode){
     let img = document.querySelector('#qrCode img')
     img.src = QRCode
+    document.querySelector('#dbtn').setAttribute('data-hidden', 'false')
 }
