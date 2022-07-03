@@ -155,7 +155,7 @@ textarea:focus-within,
   /* generated QR code image  */
 .qr-section{
     margin-top: 50px;
-    height: 70vw;
+    height: 70vh;
     overflow: auto;
     display: grid;
     place-content: center;
