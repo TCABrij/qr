@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Source+Sans+Pro:wght@200;300;400;600;900&display=swap');
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --sans-pro: 'Source Sans Pro', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: var(--sans-pro);
+}
+
+/* header and nav  */
+header {
+    background-color: #FF7396;
+}
+
+nav {
+    display: flex;
+    padding: 15px;
+}
+
+nav .logo {
+    width: 45px;
+}
+
+.no-pointer-select {
+    pointer-events: none;
+    user-select: none;
+}
+
+nav .title {
+    color: white;
+    font: 2rem var(--poppins);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/* main body  */
+
+.container {
+    max-width: 70%;
+    height: auto;
+    margin-inline: auto;
+    margin-top: 50px;
+
+}
+
+fieldset {
+    padding: 20px;
+    width: 100%;
+}
+
+legend {
+    color: black;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.input-block{
+   margin: 10px auto;
+}
+sup{
+    color: red;
+    font-size: larger;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+    font-family: var(--poppins);
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    padding: 5px;
+    font: 18px var(--poppins);
+    color: dodgerblue;
+    letter-spacing: 1px; 
+}
+textarea:focus-within,
+.qr-size input:focus-within{
+    border: 1px solid orange;
+    outline: 1px solid orange;
+}
+.qr-size{
+    /* border: 1px solid; */
+}
+.qr-height{
+   margin-bottom: 5px;
+}
+.qr-size span{
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.qr-size input{
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    color: dodgerblue
+}
+
+.button{
+    display: grid;
+    place-content: center;
+    height: 100px;
+    margin-top: 20px;
+    /* border: 1px solid; */
+}
+
+.generate-btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .generate-btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
+
+  /* generated QR code image  */
+.qr-section{
+    margin-top: 50px;
+    height: 70vw;
+    overflow: auto;
+    display: grid;
+    place-content: center;
+}
+img[src="hidden"]{
+    display: none;
+}
+
